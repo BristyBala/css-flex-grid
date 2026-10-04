@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <style>
+.box{
+    border: 1px solid blue;
+    height: 100px;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic-container{
+    border: 3px solid green;
+    display: flex;
+    height:500px;
+    align-items:center;
+}
+
+.picture{
+    border:3px solid purple;
+    width: 200px;
+    height:200px;
+
+}
+
+.box{
+font-size: 2rem;
+}
+div{
+    font-size: 2rem;
+}
+.user-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.user{
+    border: 3px solid paleturquoise;
+}
+    </style>
+</head>
+<body>
+    <div class="pic-container">
+        <div class="picture">picture</div>
+    </div>
+    <!-- .user-container>.user*5{user-$} -->
+     <div class="user-container">
+        <div class="user">Usre -1</div>
+        <div class="user">Usre -2</div>
+        <div class="user">Usre -3</div>
+        <div class="user">Usre -4</div>
+        <div class="user">Usre -5</div>
+        <div class="user">Usre -6</div>
+        <div class="user">Usre -7</div>
+        <div class="user">Usre -8</div>
+        <div class="user">Usre -9</div>
+        <div class="user">Usre -10</div>
+        <div class="user">Usre -11</div>
+        <div class="user">Usre -12</div>
+        <div class="user">Usre -13</div>
+        <div class="user">Usre -14</div>
+        <div class="user">Usre -15</div>
+        <div class="user">Usre -16</div>
+        <div class="user">Usre -17</div>
+        <div class="user">Usre -18</div>
+        <div class="user">Usre -19</div>
+        <div class="user">Usre -20</div>
+     </div>
+
+    <p>Shortcut:</p>
+    <div class="container">
+        <div class="box">box -1</div>
+        <div class="box">box -2</div>
+        <div class="box">box -3</div>
+        <div class="box">box -4</div>
+        <div class="box">box -5</div>
+    </div>
+<!-- .container>.box*5{box -$} -->
+<!-- div>article>section>h2 -->
+<!-- div>article*3>section>h2 -->
+
+<!-- div>p -->
+ <!-- .container -->
+  <!-- .container>h2.header#first     -->
+<ul class="container">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+</body>
+</html>
